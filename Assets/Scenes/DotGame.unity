@@ -456,7 +456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d926bef0d3d19443a2bf9f3eee81d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rows: 4
-  columns: 3
+  rows: 5
+  columns: 5
   pointPrefab: {fileID: 4018216790618458792, guid: 5499e6bf65c1d3b41b20891821c31f70,
     type: 3}
