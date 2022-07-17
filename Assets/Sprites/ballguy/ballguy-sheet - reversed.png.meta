@@ -1,0 +1,1522 @@
+fileFormatVersion: 2
+guid: c23e84adb1374ac47b3048d9597752a3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7102943409218967092
+    second: ballguy-sheet - reversed_0
+  - first:
+      213: 3531901986019807727
+    second: ballguy-sheet - reversed_1
+  - first:
+      213: -1302204660931983016
+    second: ballguy-sheet - reversed_2
+  - first:
+      213: -4268231662364517934
+    second: ballguy-sheet - reversed_3
+  - first:
+      213: 3764768470199816130
+    second: ballguy-sheet - reversed_4
+  - first:
+      213: -80083841130747464
+    second: ballguy-sheet - reversed_5
+  - first:
+      213: -3455366884293434697
+    second: ballguy-sheet - reversed_6
+  - first:
+      213: -6602219461768974008
+    second: ballguy-sheet - reversed_7
+  - first:
+      213: -5582169729457511128
+    second: ballguy-sheet - reversed_8
+  - first:
+      213: -2130837740323333234
+    second: ballguy-sheet - reversed_9
+  - first:
+      213: -585870517367271266
+    second: ballguy-sheet - reversed_10
+  - first:
+      213: -8453059588720521770
+    second: ballguy-sheet - reversed_11
+  - first:
+      213: -644709207605846296
+    second: ballguy-sheet - reversed_12
+  - first:
+      213: -2199544469520004152
+    second: ballguy-sheet - reversed_13
+  - first:
+      213: -2602231974588342411
+    second: ballguy-sheet - reversed_14
+  - first:
+      213: 1635265745860314393
+    second: ballguy-sheet - reversed_15
+  - first:
+      213: 6893300460108749405
+    second: ballguy-sheet - reversed_16
+  - first:
+      213: 1470601054013246900
+    second: ballguy-sheet - reversed_17
+  - first:
+      213: 4279771652116851584
+    second: ballguy-sheet - reversed_18
+  - first:
+      213: 589466994687413554
+    second: ballguy-sheet - reversed_19
+  - first:
+      213: -4308611539796505209
+    second: ballguy-sheet - reversed_20
+  - first:
+      213: 6374413022123984282
+    second: ballguy-sheet - reversed_21
+  - first:
+      213: 9209466396331195491
+    second: ballguy-sheet - reversed_22
+  - first:
+      213: -2745313489011908201
+    second: ballguy-sheet - reversed_23
+  - first:
+      213: 3192064254156392395
+    second: ballguy-sheet - reversed_24
+  - first:
+      213: -2129519300921564943
+    second: ballguy-sheet - reversed_25
+  - first:
+      213: 4545605708056795830
+    second: ballguy-sheet - reversed_26
+  - first:
+      213: 6778725796629870598
+    second: ballguy-sheet - reversed_27
+  - first:
+      213: -6085430102058086770
+    second: ballguy-sheet - reversed_28
+  - first:
+      213: -5075339890122903734
+    second: ballguy-sheet - reversed_29
+  - first:
+      213: -3822336620177955839
+    second: ballguy-sheet - reversed_30
+  - first:
+      213: -6578704964438474656
+    second: ballguy-sheet - reversed_31
+  - first:
+      213: 7824741061532228079
+    second: ballguy-sheet - reversed_32
+  - first:
+      213: 1485436980139590822
+    second: ballguy-sheet - reversed_33
+  - first:
+      213: -6517832112966073602
+    second: ballguy-sheet - reversed_34
+  - first:
+      213: 5480474598440874115
+    second: ballguy-sheet - reversed_35
+  - first:
+      213: 4279346904374551465
+    second: ballguy-sheet - reversed_36
+  - first:
+      213: 4684218406643965543
+    second: ballguy-sheet - reversed_37
+  - first:
+      213: -1173015865355339698
+    second: ballguy-sheet - reversed_38
+  - first:
+      213: 4796306676309621769
+    second: ballguy-sheet - reversed_39
+  - first:
+      213: -4249593454604688973
+    second: ballguy-sheet - reversed_40
+  - first:
+      213: 2497024793075188494
+    second: ballguy-sheet - reversed_41
+  - first:
+      213: 5817926676880181150
+    second: ballguy-sheet - reversed_42
+  - first:
+      213: 3931521535952036325
+    second: ballguy-sheet - reversed_43
+  - first:
+      213: -3165403649407897617
+    second: ballguy-sheet - reversed_44
+  - first:
+      213: -5943855045552631289
+    second: ballguy-sheet - reversed_45
+  - first:
+      213: -8438711401544401780
+    second: ballguy-sheet - reversed_46
+  - first:
+      213: 4667081295271168197
+    second: ballguy-sheet - reversed_47
+  - first:
+      213: -7944052217554277423
+    second: ballguy-sheet - reversed_48
+  - first:
+      213: -2022845750392957456
+    second: ballguy-sheet - reversed_49
+  - first:
+      213: 2769216505429987709
+    second: ballguy-sheet - reversed_50
+  - first:
+      213: -6731460013479911762
+    second: ballguy-sheet - reversed_51
+  - first:
+      213: 2328621597333128328
+    second: ballguy-sheet - reversed_52
+  - first:
+      213: -2719771018861298734
+    second: ballguy-sheet - reversed_53
+  - first:
+      213: -1549884304907601651
+    second: ballguy-sheet - reversed_54
+  - first:
+      213: -4865185927988957571
+    second: ballguy-sheet - reversed_55
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436d23ec569b29260800000000000000
+      internalID: 7102943409218967092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe1153ab426d30130800000000000000
+      internalID: 3531901986019807727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8598a40a2c3adede0800000000000000
+      internalID: -1302204660931983016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d910b9cae134c4c0800000000000000
+      internalID: -4268231662364517934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfc9df1af42f3430800000000000000
+      internalID: 3764768470199816130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b92729bb2c73eef0800000000000000
+      internalID: -80083841130747464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2aa0540221c00d0800000000000000
+      internalID: -3455366884293434697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f61c21643064a0800000000000000
+      internalID: -6602219461768974008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8252fb7e4362882b0800000000000000
+      internalID: -5582169729457511128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b18066d5ebd62e0800000000000000
+      internalID: -2130837740323333234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9013f75ed19ed7f0800000000000000
+      internalID: -585870517367271266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd8a1d1713b0ba80800000000000000
+      internalID: -8453059588720521770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eeda3934688d07f0800000000000000
+      internalID: -644709207605846296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cbc59a65f5a971e0800000000000000
+      internalID: -2199544469520004152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57f9f7b6ec303ebd0800000000000000
+      internalID: -2602231974588342411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_15
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9154e572881a1b610800000000000000
+      internalID: 1635265745860314393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a91d60f3ce9af50800000000000000
+      internalID: 6893300460108749405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_17
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd46c6fddf986410800000000000000
+      internalID: 1470601054013246900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_18
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b263474adc46b30800000000000000
+      internalID: 4279771652116851584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_19
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23d0929cb153e2800800000000000000
+      internalID: 589466994687413554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dc74fe1acb434c0800000000000000
+      internalID: -4308611539796505209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95035bded6767850800000000000000
+      internalID: 6374413022123984282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_22
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36cb734c4e89ecf70800000000000000
+      internalID: 9209466396331195491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7916b525defa6e9d0800000000000000
+      internalID: -2745313489011908201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7c631e68d7c4c20800000000000000
+      internalID: 3192064254156392395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_25
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f06b3e7a7d6272e0800000000000000
+      internalID: -2129519300921564943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_26
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba96bdce4c351f30800000000000000
+      internalID: 4545605708056795830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_27
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 34
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60876e1623fd21e50800000000000000
+      internalID: 6778725796629870598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ecb5d60953c8ba0800000000000000
+      internalID: -6085430102058086770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4faade9245c099b0800000000000000
+      internalID: -5075339890122903734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1046356781554fac0800000000000000
+      internalID: -3822336620177955839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 060cb88b0beb3b4a0800000000000000
+      internalID: -6578704964438474656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe99a08c980179c60800000000000000
+      internalID: 7824741061532228079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4037130155d9410800000000000000
+      internalID: 1485436980139590822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef20609e9320c85a0800000000000000
+      internalID: -6517832112966073602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380be984c9e8e0c40800000000000000
+      internalID: 5480474598440874115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3a9e9265b436b30800000000000000
+      internalID: 4279346904374551465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e1c52a2dfa10140800000000000000
+      internalID: 4684218406643965543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48f89d094c98bfe0800000000000000
+      internalID: -1173015865355339698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cf44b9287ef8240800000000000000
+      internalID: 4796306676309621769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b16672b4496605c0800000000000000
+      internalID: -4249593454604688973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03079ac1d637a220800000000000000
+      internalID: 2497024793075188494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9746b8ec7d6db050800000000000000
+      internalID: 5817926676880181150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e12831c1029f8630800000000000000
+      internalID: 3931521535952036325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef2152e62a3214d0800000000000000
+      internalID: -3165403649407897617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7021c65f35f238da0800000000000000
+      internalID: -5943855045552631289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c38e4c0bca3ea80800000000000000
+      internalID: -8438711401544401780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c80286f5bdc4c040800000000000000
+      internalID: 4667081295271168197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_48
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbe587f89e01c190800000000000000
+      internalID: -7944052217554277423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_49
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f55b6ce1886de3e0800000000000000
+      internalID: -2022845750392957456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_50
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d719d406dbb3e6620800000000000000
+      internalID: 2769216505429987709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_51
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae98c458cc0592a0800000000000000
+      internalID: -6731460013479911762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_52
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8840855510de05020800000000000000
+      internalID: 2328621597333128328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbbe561bae614ad0800000000000000
+      internalID: -2719771018861298734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_54
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d097703bf64bd7ae0800000000000000
+      internalID: -1549884304907601651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ballguy-sheet - reversed_55
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7e2df3ec236b7cb0800000000000000
+      internalID: -4865185927988957571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ballguy-sheet - reversed_54: -1549884304907601651
+      ballguy-sheet - reversed_1: 3531901986019807727
+      ballguy-sheet - reversed_52: 2328621597333128328
+      ballguy-sheet - reversed_5: -80083841130747464
+      ballguy-sheet - reversed_3: -4268231662364517934
+      ballguy-sheet - reversed_24: 3192064254156392395
+      ballguy-sheet - reversed_23: -2745313489011908201
+      ballguy-sheet - reversed_4: 3764768470199816130
+      ballguy-sheet - reversed_20: -4308611539796505209
+      ballguy-sheet - reversed_22: 9209466396331195491
+      ballguy-sheet - reversed_49: -2022845750392957456
+      ballguy-sheet - reversed_6: -3455366884293434697
+      ballguy-sheet - reversed_10: -585870517367271266
+      ballguy-sheet - reversed_43: 3931521535952036325
+      ballguy-sheet - reversed_53: -2719771018861298734
+      ballguy-sheet - reversed_11: -8453059588720521770
+      ballguy-sheet - reversed_42: 5817926676880181150
+      ballguy-sheet - reversed_38: -1173015865355339698
+      ballguy-sheet - reversed_48: -7944052217554277423
+      ballguy-sheet - reversed_50: 2769216505429987709
+      ballguy-sheet - reversed_25: -2129519300921564943
+      ballguy-sheet - reversed_16: 6893300460108749405
+      ballguy-sheet - reversed_47: 4667081295271168197
+      ballguy-sheet - reversed_28: -6085430102058086770
+      ballguy-sheet - reversed_7: -6602219461768974008
+      ballguy-sheet - reversed_8: -5582169729457511128
+      ballguy-sheet - reversed_33: 1485436980139590822
+      ballguy-sheet - reversed_12: -644709207605846296
+      ballguy-sheet - reversed_31: -6578704964438474656
+      ballguy-sheet - reversed_51: -6731460013479911762
+      ballguy-sheet - reversed_39: 4796306676309621769
+      ballguy-sheet - reversed_2: -1302204660931983016
+      ballguy-sheet - reversed_41: 2497024793075188494
+      ballguy-sheet - reversed_19: 589466994687413554
+      ballguy-sheet - reversed_21: 6374413022123984282
+      ballguy-sheet - reversed_45: -5943855045552631289
+      ballguy-sheet - reversed_9: -2130837740323333234
+      ballguy-sheet - reversed_29: -5075339890122903734
+      ballguy-sheet - reversed_26: 4545605708056795830
+      ballguy-sheet - reversed_30: -3822336620177955839
+      ballguy-sheet - reversed_40: -4249593454604688973
+      ballguy-sheet - reversed_44: -3165403649407897617
+      ballguy-sheet - reversed_46: -8438711401544401780
+      ballguy-sheet - reversed_55: -4865185927988957571
+      ballguy-sheet - reversed_15: 1635265745860314393
+      ballguy-sheet - reversed_37: 4684218406643965543
+      ballguy-sheet - reversed_13: -2199544469520004152
+      ballguy-sheet - reversed_34: -6517832112966073602
+      ballguy-sheet - reversed_36: 4279346904374551465
+      ballguy-sheet - reversed_17: 1470601054013246900
+      ballguy-sheet - reversed_14: -2602231974588342411
+      ballguy-sheet - reversed_18: 4279771652116851584
+      ballguy-sheet - reversed_27: 6778725796629870598
+      ballguy-sheet - reversed_0: 7102943409218967092
+      ballguy-sheet - reversed_32: 7824741061532228079
+      ballguy-sheet - reversed_35: 5480474598440874115
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
