@@ -38,6 +38,7 @@ namespace KpattGames.Characters
         {
             // Instantiating clone.
             GameObject clone = Instantiate(gameObject, transform.position, Quaternion.identity);
+            clone.name = "Clone"; // Doing this so the hierarchy doesn't get cluttered with (Clone)(Clone)...
             Collider2D cloneCol = clone.GetComponent<Collider2D>();
             
             Physics2D.IgnoreCollision(cloneCol, col, true);
