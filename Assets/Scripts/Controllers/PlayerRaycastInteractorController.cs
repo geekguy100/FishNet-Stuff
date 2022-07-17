@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace KpattGames.Input
@@ -27,7 +26,7 @@ namespace KpattGames.Input
             {
                 Vector3 screenPos = controls.Actions.CursorPosition.ReadValue<Vector2>();
                 Vector3 worldPos = mainCam.ScreenToWorldPoint(screenPos);
-                worldPos.z = 0;
+                worldPos.z = -10;
 
                 return worldPos;
             }
@@ -38,7 +37,7 @@ namespace KpattGames.Input
             raycastInteractor = GetComponent<RaycastInteractor>();
             
             controls = new PlayerControls();
-            controls.Actions.Interact.performed += _ => raycastInteractor.PerformRaycast(mainCam.transform.position, CursorPos);
+            controls.Actions.Interact.performed += _ => raycastInteractor.PerformRaycast(CursorPos);
             
             controls.Actions.Enable();
         }

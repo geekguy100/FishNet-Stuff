@@ -21,20 +21,17 @@ namespace KpattGames.Input
         
         [Tooltip("The interactable layer.")]
         [SerializeField] private LayerMask whatIsInteractable;
-        
+
 
         /// <summary>
         /// Perform a raycast towards the cursor's position
         /// to check for interactables.
         /// </summary>
-        /// <param name="origin">The raycast's origin.</param>
         /// <param name="destination">The raycast's destination.</param>
-        public void PerformRaycast(Vector3 origin, Vector3 destination)
+        public void PerformRaycast(Vector3 destination)
         {
-            Vector3 dir = (destination - origin).normalized;
+            var hit = Physics2D.Raycast(destination, destination, 0f, whatIsInteractable);
 
-            var hit = Physics2D.Raycast(origin, dir, RAYCAST_DISTANCE, whatIsInteractable);
-            
             if (hit.collider != null)
             {
                 OnInteractableNearby(hit.transform.GetComponent<IInteractable>());
