@@ -1,10 +1,24 @@
 using System.Collections;
+using KpattGames.Channels;
 using KpattGames.Interaction;
 using UnityEngine;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 namespace KpattGames.Characters
 {
+    public struct BlobHealth
+    {
+        public int currentHealth;
+        public readonly int maxHealth;
+
+        public BlobHealth(int currentHealth, int maxHealth)
+        {
+            this.currentHealth = currentHealth;
+            this.maxHealth = maxHealth;
+        }
+    }
+    
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Collider2D))]
     public class BlobBehaviour : MonoBehaviour, IInteractable
@@ -23,30 +37,52 @@ namespace KpattGames.Characters
                 return cloneParent;
             }
         }
+
+        private BlobHealth health;
+        private int CurrentHealth
+        {
+            get => health.currentHealth;
+            set => health.currentHealth = value;
+        }
         
-        private int currentHealth;
         private Rigidbody2D rb;
         private Collider2D col;
         
-        [SerializeField] private int health;
+        [Header("Health")]
+        [FormerlySerializedAs("health")] 
+        [SerializeField] private int maxHealth;
+        
+        [Header("Duplication Forces")]
         [SerializeField][Min(0)] private float minForce = 1f;
         [SerializeField][Min(0)] private float maxForce = 3f;
+
+        [Header("Channels")]
+        [Tooltip("Channel used to invoke blob interaction events.")]
+        [SerializeField] private BlobBehaviourChannel blobInteractionChannel;
+        
 
         private void Awake()
         {
             rb = GetComponent<Rigidbody2D>();
             col = GetComponent<Collider2D>();
+            health = new BlobHealth(0, maxHealth);
         }
 
         public void PerformAction()
         {
-            ++currentHealth;
+            ++CurrentHealth;
+            blobInteractionChannel.RaiseEvent(this);
 
-            if (currentHealth >= health)
+            if (CurrentHealth >= maxHealth)
             {
                 Duplicate();
-                currentHealth = 0;
+                CurrentHealth = 0;
             }
+        }
+
+        public BlobHealth GetHealth()
+        {
+            return health;
         }
 
         private void Duplicate()
