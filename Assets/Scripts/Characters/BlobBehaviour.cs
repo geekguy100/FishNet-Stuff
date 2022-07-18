@@ -7,18 +7,6 @@ using Random = UnityEngine.Random;
 
 namespace KpattGames.Characters
 {
-    public struct BlobHealth
-    {
-        public int currentHealth;
-        public readonly int maxHealth;
-
-        public BlobHealth(int currentHealth, int maxHealth)
-        {
-            this.currentHealth = currentHealth;
-            this.maxHealth = maxHealth;
-        }
-    }
-    
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Collider2D))]
     public class BlobBehaviour : MonoBehaviour, IInteractable
@@ -67,7 +55,7 @@ namespace KpattGames.Characters
             col = GetComponent<Collider2D>();
             health = new BlobHealth(0, maxHealth);
         }
-
+        
         public void PerformAction()
         {
             ++CurrentHealth;
