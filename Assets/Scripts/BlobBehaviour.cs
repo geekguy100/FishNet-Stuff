@@ -9,6 +9,21 @@ namespace KpattGames.Characters
     [RequireComponent(typeof(Collider2D))]
     public class BlobBehaviour : MonoBehaviour, IInteractable
     {
+        private static Transform cloneParent;
+        private static Transform CloneParent
+        {
+            get
+            {
+                if (cloneParent == null)
+                {
+                    GameObject cp = new GameObject("Clones");
+                    cloneParent = cp.transform;
+                }
+
+                return cloneParent;
+            }
+        }
+        
         private int currentHealth;
         private Rigidbody2D rb;
         private Collider2D col;
@@ -39,6 +54,7 @@ namespace KpattGames.Characters
             // Instantiating clone.
             GameObject clone = Instantiate(gameObject, transform.position, Quaternion.identity);
             clone.name = "Clone"; // Doing this so the hierarchy doesn't get cluttered with (Clone)(Clone)...
+            clone.transform.parent = CloneParent;
             Collider2D cloneCol = clone.GetComponent<Collider2D>();
             
             Physics2D.IgnoreCollision(cloneCol, col, true);
