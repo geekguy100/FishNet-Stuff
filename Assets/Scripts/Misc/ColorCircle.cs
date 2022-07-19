@@ -26,6 +26,8 @@ public class ColorCircle : NetworkBehaviour, IInteractable
         {
             RequestColorChange(randomColor);
         }
+        
+        BlobFactory.Instance.RequestSpawnBlob();
     }
 
     [ObserversRpc(IncludeOwner = true, BufferLast = true)]
