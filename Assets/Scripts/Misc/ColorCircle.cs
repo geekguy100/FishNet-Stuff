@@ -1,74 +1,37 @@
 using System;
 using FishNet.Object;
+using KpattGames.Characters;
 using KpattGames.Interaction;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(ServerHostCircleBehaviour))]
+[RequireComponent(typeof(ClientCircleBehaviour))]
 public class ColorCircle : NetworkBehaviour, IInteractable
 {
-    private SpriteRenderer spriteRenderer;
-    
-    private void Awake()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    private CircleBehaviour behaviour;
 
-    // Change the color of the circle when it spawns in.
     public override void OnStartClient()
     {
         base.OnStartClient();
-        if (base.IsOwner)
-        {
-            OnSpawn();
-        }
-    }
 
-    private void OnSpawn()
-    {
-        Color randomColor = Random.ColorHSV();
-        randomColor.a = 1f;
-        
         if (base.IsServer)
         {
-            ChangeColor(randomColor);
+            behaviour = gameObject.GetComponent<ServerHostCircleBehaviour>();
         }
         else
         {
-            RequestColorChange(randomColor);
+            behaviour = gameObject.GetComponent<ClientCircleBehaviour>();
         }
     }
-    
+
     public void PerformAction()
     {
-        // We don't want a server-only build to be able to run this.
-        if (!base.IsClient)
-            return;
+        Color c = Random.ColorHSV();
+        c.a = 1f;
         
-        Color randomColor = Random.ColorHSV();
-        randomColor.a = 1f;
-
-        if (base.IsServer)
-        {
-            ChangeColor(randomColor);
-        }
-        else
-        {
-            RequestColorChange(randomColor);
-        }
-        
-        BlobFactory.Instance.RequestSpawnBlob(base.Owner);
-    }
-
-    [ObserversRpc(IncludeOwner = true, BufferLast = true)]
-    private void ChangeColor(Color c)
-    {
-        Debug.Log("Calling change color");
-        spriteRenderer.color = c;
-    }
-
-    [ServerRpc(RequireOwnership = false)]
-    private void RequestColorChange(Color c)
-    {
-        ChangeColor(c);
+        Debug.Log("Is Server? " + (base.IsServer));
+        Debug.Log("Behaviour null? " + (behaviour == null));
+        behaviour.ChangeColor(c);
     }
 }

@@ -33,8 +33,8 @@ public class BlobFactory : NetworkBehaviour
         }
         else
         {
-            SpawnBlob(owner);
-        }
+            SpawnBlob(owner);  
+        } 
     }
     
     [ServerRpc(RequireOwnership = false)]
@@ -42,6 +42,11 @@ public class BlobFactory : NetworkBehaviour
     {
         Vector3 pos = GetRandomPos();
         var clone = Instantiate(blobPrefab, pos, Quaternion.identity).gameObject;
+        
+        // Rotating current transform to random angle.
+        float angle = Random.value * 360f;
+        Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
+        clone.transform.localRotation = rot;
         
         base.Spawn(clone, owner);
     }
