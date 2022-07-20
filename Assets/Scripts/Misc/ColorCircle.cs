@@ -13,6 +13,30 @@ public class ColorCircle : NetworkBehaviour, IInteractable
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        if (base.IsOwner)
+        {
+            OnSpawn();
+        }
+    }
+    
+    private void OnSpawn()
+    {
+        Color randomColor = Random.ColorHSV();
+        randomColor.a = 1f;
+        
+        if (base.IsServer)
+        {
+            ChangeColor(randomColor);
+        }
+        else
+        {
+            RequestColorChange(randomColor);
+        }
+    }
+    
     public void PerformAction()
     {
         Color randomColor = Random.ColorHSV();
@@ -27,12 +51,13 @@ public class ColorCircle : NetworkBehaviour, IInteractable
             RequestColorChange(randomColor);
         }
         
-        BlobFactory.Instance.RequestSpawnBlob();
+        BlobFactory.Instance.RequestSpawnBlob(base.Owner);
     }
 
     [ObserversRpc(IncludeOwner = true, BufferLast = true)]
     private void ChangeColor(Color c)
     {
+        Debug.Log("Calling change color");
         spriteRenderer.color = c;
     }
 

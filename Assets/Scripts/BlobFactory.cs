@@ -1,3 +1,4 @@
+using FishNet.Connection;
 using FishNet.Object;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -21,27 +22,27 @@ public class BlobFactory : NetworkBehaviour
         return Random.insideUnitCircle * Random.Range(-5f, 5f);
     }
 
-    public void RequestSpawnBlob()
+    public void RequestSpawnBlob(NetworkConnection owner)
     {
         if (base.IsServer)
         {
             Vector3 pos = GetRandomPos();
             var clone = Instantiate(blobPrefab, pos, Quaternion.identity).gameObject;
-        
-            base.Spawn(clone, base.Owner);
+
+            base.Spawn(clone, owner);
         }
         else
         {
-            SpawnBlob();   
+            SpawnBlob(owner);
         }
     }
     
     [ServerRpc(RequireOwnership = false)]
-    private void SpawnBlob()
+    private void SpawnBlob(NetworkConnection owner)
     {
         Vector3 pos = GetRandomPos();
         var clone = Instantiate(blobPrefab, pos, Quaternion.identity).gameObject;
         
-        base.Spawn(clone, base.Owner);
+        base.Spawn(clone, owner);
     }
 }
