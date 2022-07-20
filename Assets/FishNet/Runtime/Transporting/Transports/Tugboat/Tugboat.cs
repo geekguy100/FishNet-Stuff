@@ -50,7 +50,7 @@ namespace FishNet.Transporting.Tugboat
         /// </summary>
         [Tooltip("Port to use.")]
         [SerializeField]
-        private ushort _port = 7770;
+        private ushort _port = 7777;
         /// <summary>
         /// Maximum number of players which may be connected at once.
         /// </summary>
