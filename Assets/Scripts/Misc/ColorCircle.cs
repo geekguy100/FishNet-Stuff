@@ -13,6 +13,7 @@ public class ColorCircle : NetworkBehaviour, IInteractable
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    // Change the color of the circle when it spawns in.
     public override void OnStartClient()
     {
         base.OnStartClient();
@@ -21,7 +22,7 @@ public class ColorCircle : NetworkBehaviour, IInteractable
             OnSpawn();
         }
     }
-    
+
     private void OnSpawn()
     {
         Color randomColor = Random.ColorHSV();
@@ -39,6 +40,10 @@ public class ColorCircle : NetworkBehaviour, IInteractable
     
     public void PerformAction()
     {
+        // We don't want a server-only build to be able to run this.
+        if (!base.IsClient)
+            return;
+        
         Color randomColor = Random.ColorHSV();
         randomColor.a = 1f;
 
