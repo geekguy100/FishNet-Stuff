@@ -8,7 +8,7 @@ namespace KpattGames.Characters
 {
     public abstract class CircleBehaviour : NetworkBehaviour
     {
-        public abstract void ChangeColor(UnityEngine.Color color);
+        public abstract void ChangeColor();
         public abstract void SpawnDuplicate();
     }
 }

@@ -16,9 +16,9 @@ namespace KpattGames.Characters
 
         // Request a color change
         [ServerRpc(RequireOwnership = false)]
-        public override void ChangeColor(Color color)
+        public override void ChangeColor()
         {
-            serverHostBehaviour.ChangeColor(color);
+            serverHostBehaviour.ChangeColor();
         }
 
         // Request a duplicate to be spawned.
