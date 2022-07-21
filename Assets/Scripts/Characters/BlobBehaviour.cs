@@ -1,4 +1,6 @@
 using System.Collections;
+using FishNet.Object;
+using FishNet.Object.Synchronizing;
 using KpattGames.Channels;
 using KpattGames.Interaction;
 using UnityEngine;
@@ -9,30 +11,11 @@ namespace KpattGames.Characters
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Collider2D))]
-    public class BlobBehaviour : MonoBehaviour, IInteractable
+    public class BlobBehaviour : NetworkBehaviour, IInteractable
     {
-        private static Transform cloneParent;
-        private static Transform CloneParent
-        {
-            get
-            {
-                if (cloneParent == null)
-                {
-                    GameObject cp = new GameObject("Clones");
-                    cloneParent = cp.transform;
-                }
+        [SyncVar]
+        private int currentHealth;
 
-                return cloneParent;
-            }
-        }
-
-        private BlobHealth health;
-        private int CurrentHealth
-        {
-            get => health.currentHealth;
-            set => health.currentHealth = value;
-        }
-        
         private Rigidbody2D rb;
         private Collider2D col;
         
@@ -53,58 +36,64 @@ namespace KpattGames.Characters
         {
             rb = GetComponent<Rigidbody2D>();
             col = GetComponent<Collider2D>();
-            health = new BlobHealth(0, maxHealth);
         }
         
         public void PerformAction()
         {
-            ++CurrentHealth;
-            blobInteractionChannel.RaiseEvent(this);
+            ModifyHealth(currentHealth + 1);
+        }
 
-            if (CurrentHealth >= maxHealth)
+        [ServerRpc]
+        private void ModifyHealth(int health)
+        {
+            currentHealth = health;
+            if (currentHealth >= maxHealth)
             {
+                currentHealth = 0;
                 Duplicate();
-                CurrentHealth = 0;
             }
         }
 
-        public BlobHealth GetHealth()
-        {
-            return health;
-        }
-
+        [Server]
         private void Duplicate()
         {
-            // Instantiating clone.
-            GameObject clone = Instantiate(gameObject, transform.position, Quaternion.identity);
-            clone.name = "Clone"; // Doing this so the hierarchy doesn't get cluttered with (Clone)(Clone)...
-            clone.transform.parent = CloneParent;
-            Collider2D cloneCol = clone.GetComponent<Collider2D>();
+            Vector3 randomPos = Random.insideUnitCircle * Random.Range(-5f, 5f);
+            var clone = Instantiate(gameObject, randomPos, Quaternion.identity);
             
-            Physics2D.IgnoreCollision(cloneCol, col, true);
-            
-            
-            // Rotating current transform to random angle for AddForce().
-            float angle = Random.value * 360f;
-            Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.localRotation = rot;
-
-            // Add a random force in one direction to the initial blob, then
-            // add the opposite force to the other.
-            Vector2 force = transform.right * Random.Range(minForce, maxForce);
-            
-            rb.AddForce(force, ForceMode2D.Impulse);
-            clone.GetComponent<Rigidbody2D>().AddForce(-force, ForceMode2D.Impulse);
-            
-            
-            // Re-enable collisions after some time.
-            StartCoroutine(WaitThenEnableCollision());
-            
-            IEnumerator WaitThenEnableCollision()
-            {
-                yield return new WaitForSeconds(1f);
-                Physics2D.IgnoreCollision(cloneCol, col, false);
-            }
+            base.Spawn(clone, base.Owner);
         }
+
+        // private void Duplicate()
+        // {
+        //     // Instantiating clone.
+        //     GameObject clone = Instantiate(gameObject, transform.position, Quaternion.identity);
+        //     clone.name = "Clone"; // Doing this so the hierarchy doesn't get cluttered with (Clone)(Clone)...
+        //     Collider2D cloneCol = clone.GetComponent<Collider2D>();
+        //     
+        //     Physics2D.IgnoreCollision(cloneCol, col, true);
+        //     
+        //     
+        //     // Rotating current transform to random angle for AddForce().
+        //     float angle = Random.value * 360f;
+        //     Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
+        //     transform.localRotation = rot;
+        //
+        //     // Add a random force in one direction to the initial blob, then
+        //     // add the opposite force to the other.
+        //     Vector2 force = transform.right * Random.Range(minForce, maxForce);
+        //     
+        //     rb.AddForce(force, ForceMode2D.Impulse);
+        //     clone.GetComponent<Rigidbody2D>().AddForce(-force, ForceMode2D.Impulse);
+        //     
+        //     
+        //     // Re-enable collisions after some time.
+        //     StartCoroutine(WaitThenEnableCollision());
+        //     
+        //     IEnumerator WaitThenEnableCollision()
+        //     {
+        //         yield return new WaitForSeconds(1f);
+        //         Physics2D.IgnoreCollision(cloneCol, col, false);
+        //     }
+        // }
     }   
 }

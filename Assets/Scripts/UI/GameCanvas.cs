@@ -37,7 +37,7 @@ namespace KpattGames.UI
             position.z = 0;
             clone.transform.position = position;
             
-            clone.Display(blob.GetHealth());
+            //clone.Display(blob.GetHealth());
         }
     }   
 }

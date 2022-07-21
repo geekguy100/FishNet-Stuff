@@ -1,32 +1,59 @@
+using FishNet;
 using FishNet.Object;
-using KpattGames.Characters;
+using FishNet.Object.Synchronizing;
 using KpattGames.Interaction;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-[RequireComponent(typeof(ServerHostCircleBehaviour))]
-[RequireComponent(typeof(ClientCircleBehaviour))]
 public class ColorCircle : NetworkBehaviour, IInteractable
 {
-    private CircleBehaviour behaviour;
+    private SpriteRenderer spriteRenderer;
+
+    [SerializeField] private GameObject prefab;
+
+    [SyncVar(OnChange = nameof(OnColorChange))]
+    private Color color;
+
+    
+    protected void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     public override void OnStartClient()
     {
         base.OnStartClient();
-
-        if (base.IsServer)
+        if (base.IsOwner)
         {
-            behaviour = gameObject.GetComponent<ServerHostCircleBehaviour>();
-        }
-        else
-        {
-            behaviour = gameObject.GetComponent<ClientCircleBehaviour>();
+            ChangeColor();
         }
     }
 
     public void PerformAction()
     {
-        behaviour.ChangeColor();
-        behaviour.SpawnDuplicate();
+        //ChangeColor();
+        Duplicate();
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void ChangeColor()
+    {
+        Color c = Random.ColorHSV();
+        c.a = 1f;
+
+        color = c;
+    }
+
+    [ServerRpc(RequireOwnership = false)]
+    private void Duplicate()
+    {
+        Vector3 pos = Random.insideUnitCircle * Random.Range(-5f, 5f);
+        GameObject clone = Instantiate(prefab, pos, Quaternion.identity);
+        InstanceFinder.ServerManager.Spawn(clone, base.Owner);
+    }
+
+    private void OnColorChange(Color prev, Color next, bool asServer)
+    {
+        spriteRenderer.color = next;
     }
 }
